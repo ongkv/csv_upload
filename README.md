@@ -40,6 +40,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Unit testing
 
+<img width="840" alt="Screenshot 2024-12-14 at 4 35 27 AM" src="https://github.com/user-attachments/assets/ddfba24a-c729-4bb3-adb2-ac6e89804a6d" />
+
 The unit tests can be run with the following command, while in the root project folder.
 
 ```bash
