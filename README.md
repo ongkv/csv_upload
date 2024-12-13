@@ -12,7 +12,7 @@ Lastly, the unit tests are facilitated via [ts-jest](https://kulshekhar.github.i
 
 ## Getting Started
 
-Before we begin, please ensure the repository is downloaded or cloned, and you have either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) installed. It is strongly recommended to use the yarn package manager for the following steps, or the npm equivalent should you prefer.
+Before beginning, please ensure the repository is [downloaded](https://github.com/ongkv/csv_upload/archive/refs/heads/main.zip) or cloned, and you have either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) installed. It is strongly recommended to use the yarn package manager for the following steps, or the npm equivalent should you prefer.
 
 Note: This application was developed and tested on the macOS operating system. If there are any issues running it on Windows, it is possible that you may have to run the project in [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
@@ -33,6 +33,8 @@ yarn build
 ```bash
 # Production server
 yarn start
+
+# OR
 
 # Dev server
 yarn dev
