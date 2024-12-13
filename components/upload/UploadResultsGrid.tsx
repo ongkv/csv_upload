@@ -2,7 +2,7 @@ import React from "react";
 import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 import { Accordion, AccordionSummary, Typography } from "@mui/material";
 import { ExpandMore } from "@mui/icons-material";
-import { FIELD_TITLE_TO_HEADER_MAP, FIELD_TITLES } from "@/helpers/constants";
+import { FIELD_TITLE_TO_COL_DEF_MAP, FIELD_TITLES } from "@/helpers/constants";
 import { CsvRowData } from "@/types/upload";
 
 interface UploadResultsGridProps {
@@ -17,12 +17,14 @@ export default function UploadResultsGrid({
   rows,
 }: UploadResultsGridProps) {
   const columns: GridColDef[] = FIELD_TITLES.map((title) => {
+    const { headerName, minWidth, flex } = FIELD_TITLE_TO_COL_DEF_MAP[title];
+
     return {
       field: title,
-      headerName: FIELD_TITLE_TO_HEADER_MAP[title],
+      headerName,
       headerAlign: "left",
-      minWidth: 200,
-      flex: 0.4,
+      minWidth,
+      flex,
     };
   });
 
